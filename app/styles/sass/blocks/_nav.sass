@@ -1,0 +1,33 @@
+.nav
+	&__list
+		margin: 0 0 88px
+		padding: 0
+
+	&__item
+		transition-property: color, fill
+		transition-duration: .3s
+		transition-timing-function: ease-in-out
+		cursor: pointer
+	&__item:not(:last-child)
+		margin-bottom: 36px
+	
+	&__icon
+		margin-right: 16px
+	&__icon-hover
+		fill: $whitecolor
+		transition: fill .3s ease-in-out
+	
+	&__link
+		color: $whitecolor
+		transition: color .3s ease-in-out
+
+	&__item:hover 
+		.nav__link
+			color: $activecolor
+		.nav__icon-hover
+			fill: $activecolor
+		
+
+		
+
+

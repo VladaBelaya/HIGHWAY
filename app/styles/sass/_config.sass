@@ -1,0 +1,28 @@
+// USER VARIABLES SECTION
+$fontfamily: 'graphik', sans-serif
+$whitecolor: #fff
+$activecolor: #5272FF
+$textcolor: #48556E
+$fontsize: 14px
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('graphik', normal, 400, '../fonts/GraphikLCG-Regular.woff2')
+@include font('graphik', normal, 600, '../fonts/GraphikLCG-Semibold.woff2')
+
+::placeholder
+	color: #666
+
