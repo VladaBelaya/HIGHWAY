@@ -4,6 +4,19 @@
 	border-radius: 16px
 	background-color: #172673
 	filter: drop-shadow(0px 8px 15px rgba(6, 19, 74, 0.302))
+	&_active
+		position: relative
+		background: linear-gradient(156.94deg, #1D2F86 36.08%, #00C7D3 219.02%)
+		&:after
+			position: absolute
+			content: ''
+			bottom: -2px
+			left: 20px
+			width: 35px
+			height: 4px
+			border-radius: 20px
+			filter: drop-shadow(0px 0px 15px #5272FF)
+			background: linear-gradient(90deg, #5272FF 0%, #00C7D3 100%)
 	&__icon
 		width: 35px
 		height: 35px
@@ -23,6 +36,6 @@
 	&__text
 		line-height: 19px
 	&__text-br
-		max-width: 25%
+		max-width: 100px
 	&__text-br1
-		max-width: 50%
+		max-width: 70px
