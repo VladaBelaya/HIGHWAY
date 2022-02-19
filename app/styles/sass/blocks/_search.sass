@@ -1,0 +1,42 @@
+.search
+	&__dropdown-list
+		display: none
+	&__row
+		padding-left: 0
+	&__panel
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 5px 5px 5px 20px
+		border-radius: 16px
+		border: 1px solid #ABB2C1
+		background-color: #F4F5F8
+	&__select-btn
+		position: relative
+		border: none
+		padding-right: 50px
+		color: #48556E
+		background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.53503 5.76801C4.26984 5.76795 4.0155 5.66253 3.828 5.47498L3.80505 5.45099L0.293091 1.93896C0.10562 1.75144 0.000366211 1.49716 0.000366211 1.23199C0.000366211 0.96683 0.10562 0.712491 0.293091 0.524963C0.385964 0.431987 0.496156 0.358247 0.617554 0.307922C0.738952 0.257598 0.869195 0.231689 1.00061 0.231689C1.13203 0.231689 1.26202 0.257598 1.38342 0.307922C1.50482 0.358247 1.61526 0.431987 1.70813 0.524963L4.53601 3.35297L7.36414 0.524963C7.45701 0.431987 7.5672 0.358247 7.6886 0.307922C7.81 0.257598 7.94024 0.231689 8.07166 0.231689C8.20307 0.231689 8.33307 0.257598 8.45447 0.307922C8.57587 0.358247 8.6863 0.431987 8.77917 0.524963C8.96665 0.712491 9.0719 0.96683 9.0719 1.23199C9.0719 1.49716 8.96665 1.75144 8.77917 1.93896L5.26794 5.45099L5.24402 5.47601C5.05653 5.66356 4.80218 5.76893 4.53699 5.76898L4.53503 5.76801Z' fill='%23ABB2C1'/%3E%3C/svg%3E%0A")
+		background-position: 85% 50%
+		background-repeat: no-repeat
+		&:after
+			position: absolute
+			content: ''
+			right: 0
+			top: -7px
+			width: 1px
+			height: 30px
+			background-color: #ABB2C1
+	&__info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 21px 20px 22px
+		border-radius: 16px
+		background-color: $whitecolor
+		filter: drop-shadow(0px 8px 15px rgba(209, 220, 235, 0.302))
+	&__text
+		color: #48556E
+	&__num
+		color: $activecolor
+		font-weight: 600
