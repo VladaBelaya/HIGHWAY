@@ -2,12 +2,62 @@
 	&__header
 		display: grid
 		padding-left: 20px
+		margin-bottom: 16px
 		grid-template-columns: $table-grid-template
 	&__text
 		font-size: 12px
 		font-weight: 600
 		color: $textcolor
-.center
-	text-align: center
-.right 
-	text-align: right
+	&__body
+		padding-left: 0
+		margin-bottom: 0
+		color: $tablecolor
+	&__item
+		display: grid
+		grid-template-columns: $table-grid-template
+		padding: 19px 20px
+		min-height: 70px
+		margin-bottom: 4px
+		border-radius: 16px
+		filter: drop-shadow(0px 8px 15px rgba(209, 220, 235, 0.302))
+		background-color: #F4F5F8
+		&:first-child
+			background-color: $whitecolor
+	&__descr
+		font-size: 12px
+		line-height: 16px
+		display: flex
+		align-items: center
+		&:last-child
+			justify-content: space-between
+	&__ball
+		display: inline-block
+		margin-right: 20px
+		width: 8px
+		height: 8px
+		border-radius: 50%
+		background-color: #F5CA31
+	&__status
+		display: inline-block
+		max-width: 102px
+	&__status-block
+		display: flex
+		justify-content: center
+		align-items: center
+		min-width: 80px
+		padding: 5px 13px 5px 10px
+		border-radius: 6px
+		font-size: 8px
+		line-height: 10px
+		color: $whitecolor
+		background-color: #F5CA31
+	&__green
+		background-color: #19DB92
+	&__red
+		background-color: #FF5266
+	&__city-icon
+		width: 5px
+		height: 15px
+		background-image: url('../images/dist/table_icon.png')
+		background-repeat: no-repeat
+		background-position: center
