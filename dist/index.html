@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="HIGHWAY">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:image" content="images/dist/preview.png">
+		<title>HIGHWAY</title>
+		<link rel="icon" href="images/favicon.png">
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<main class="main">
+			<aside class="sidebar">
+    <svg class="sidebar__logo" xmlns="http://www.w3.org/2000/svg" width="100" height="14" viewBox="0 0 100 14">
+        <g transform="translate(-73 -20)">
+            <path d="M9.151,5.908H3.872V.844H0V14.328H3.872V9.065H9.151v5.264h3.872V.844H9.151Z" transform="translate(73 19.409)" fill="#fff"/>
+            <path d="M25.24.844H21.368V14.328H25.24Z" transform="translate(67.397 19.409)" fill="#fff"/>
+            <path d="M60.289,5.908H55.01V.844H51.138V14.328H55.01V9.065h5.279v5.264h3.873V.844H60.289Z" transform="translate(58.94 19.409)" fill="#fff"/>
+            <path d="M90.4.844,87.594,9.065,84.763.844H81.209L78.19,9.065,75.555.844H71.569L76,14.328h4.148l2.742-8.42,2.619,8.42h4.141L94.094.844Z" transform="translate(53.213 19.409)" fill="#fff"/>
+            <path d="M105.674.833,99.63,14.326h3.954l1.073-2.62h5.791l1.074,2.62h4.067L109.529.841Zm0,8.229,1.863-4.487,1.936,4.487Z" transform="translate(45.343 19.412)" fill="#fff"/>
+            <path d="M129.144.844l-3.254,5.064L122.653.844h-4.092l5.223,8.221v5.264h3.872V9.121L132.9.844Z" transform="translate(40.379 19.409)" fill="#fff"/>
+            <path d="M36.624,5.809V8.967h2.652v2.405h-2.09a4.057,4.057,0,0,1-2.018-.489A3.484,3.484,0,0,1,33.8,9.513a4.033,4.033,0,0,1-.488-2,3.6,3.6,0,0,1,1.072-2.8,3.687,3.687,0,0,1,1.305-.83,3.735,3.735,0,0,1,1.536-.227h3.75V.5H37.031a8.457,8.457,0,0,0-3.929.9,6.707,6.707,0,0,0-2.717,2.493,7.207,7.207,0,0,0,0,7.215,6.743,6.743,0,0,0,2.7,2.493,8.232,8.232,0,0,0,3.872.9h5.718V5.809H36.624Z" transform="translate(64.911 19.499)" fill="#fff"/>
+        </g>
+    </svg>
+    <nav class="nav">
+        <ul class="nav__list">
+					<li class="nav__item  nav__item-active">
+							<svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.238" height="18" viewBox="0 0 17.238 18">
+								<defs>
+									<linearGradient id="linear-gradient" x1="0.309" y1="0.13" x2="0.683" y2="1.74" gradientUnits="objectBoundingBox">
+										<stop offset="0" stop-color="#5272ff"/>
+										<stop offset="1" stop-color="#00c7d3"/>
+									</linearGradient>
+								</defs>
+								<g id="box" transform="translate(-10.25)">
+									<g transform="translate(10.25)">
+										<path class="nav__icon-hover" data-name="Контур 876" d="M27.469,4.452V4.414c-.019-.038-.019-.076-.038-.114V4.281a.415.415,0,0,0-.076-.1l-.019-.019c-.019-.019-.057-.038-.076-.057l-.019-.019h-.019L27.2,4.072,19.116.057a.606.606,0,0,0-.514,0L15.882,1.408l8.124,4.167.019.019c.019,0,.019.019.038.019.019.019.019.038.038.057v4.471a.2.2,0,0,1-.1.171l-1.636.856a.193.193,0,0,1-.266-.076.143.143,0,0,1-.019-.1V6.678l-8.22-4.243-.019-.019L10.554,4.053l-.019.019h-.019l-.019.019c-.019.019-.057.038-.076.057l-.019.019c-.038.038-.057.076-.1.114V4.3a.27.27,0,0,0-.038.114v.038c0,.038-.019.057-.019.1v8.885a.561.561,0,0,0,.323.514l8.01,4a.523.523,0,0,0,.381.038L19,17.961c.038,0,.057-.019.1-.038l8.067-4a.573.573,0,0,0,.323-.514V4.547A.172.172,0,0,1,27.469,4.452Z" transform="translate(-10.25 0)" fill="#fff"/>
+									</g>
+								</g>
+							</svg>
+							<a href="#" class="nav__link">Статус груза</a>
+							<div class="nav__tooltip">Статус груза</div>
+            </li>
+            <li class="nav__item">
+							<svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="20" viewBox="0 0 15 20">
+								<defs>
+									<linearGradient id="linear-gradient" x1="0.33" y1="0.234" x2="1.117" y2="1.368" gradientUnits="objectBoundingBox">
+										<stop offset="0" stop-color="#fff"/>
+										<stop offset="1" stop-color="#fff"/>
+									</linearGradient>
+								</defs>
+								<path class="nav__icon-hover" id="Объединение_21" data-name="Объединение 21" d="M4.5,20a1.5,1.5,0,1,1,0-3h6a1.5,1.5,0,0,1,0,3ZM1.875,15A1.875,1.875,0,0,1,0,13.125V10.5A7.5,7.5,0,0,1,6,3.15V1.5a1.5,1.5,0,1,1,3,0V3.15A7.5,7.5,0,0,1,15,10.5v2.624A1.876,1.876,0,0,1,13.125,15Z" fill="url(#linear-gradient)"/>
+							</svg>
+							<a href="#" class="nav__link nav__link-notific">Уведомления</a>
+							<div class="nav__tooltip">Уведомления</div>
+            </li>
+            <li class="nav__item">
+							<svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="18.272" height="18.097" viewBox="0 0 18.272 18.097">
+								<g transform="translate(-324 -267)">
+									<g transform="translate(324 267)">
+										<g transform="translate(0 0)">
+											<g>
+												<g>
+													<g id="data-analytics-circular-graphic" transform="translate(0 0)">
+														<g transform="translate(0 0)">
+															<path class="nav__icon-hover" d="M52.639.463v8.66l7.658,2.86A8.308,8.308,0,0,0,52.639.463Z" transform="translate(-42.671 -0.463)" fill="#fff"/>
+															<path class="nav__icon-hover" d="M8.3,8.322a8.3,8.3,0,1,0,7.658,11.521L8.3,16.982Z" transform="translate(0 -6.834)" fill="#fff"/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<a href="#" class="nav__link">Аналитика</a>
+							<div class="nav__tooltip">Аналитика</div>
+            </li>
+            <li class="nav__item">
+							<svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+								<g id="info-button" transform="translate(0 0)">
+									<g transform="translate(0 0)">
+										<path class="nav__icon-hover" d="M15.364,2.636a9,9,0,1,0,0,12.728A9,9,0,0,0,15.364,2.636ZM10.174,12.913a1.174,1.174,0,0,1-2.348,0v-4.7a1.174,1.174,0,1,1,2.348,0Zm-1.195-6.7a1.047,1.047,0,0,1-1.113-1.07A1.046,1.046,0,0,1,8.993,4.056a1.079,1.079,0,1,1-.014,2.155Z" transform="translate(0 0)" fill="#fff"/>
+									</g>
+								</g>
+							</svg>
+							<a href="#" class="nav__link">О компании</a>
+							<div class="nav__tooltip">О компании</div>
+            </li>
+        </ul>
+			<a href="" class="btn">Все статусы</a>
+    </nav>
+	<div class="sidebar__logOut">
+		<svg class="sidebar__logOut-icon" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M9.73703 15.725C9.71033 15.669 9.70027 15.6065 9.70803 15.545C9.71803 15.497 9.68403 15.457 9.60803 15.426C9.53203 15.395 9.49403 15.371 9.49403 15.353C9.49403 15.335 9.43903 15.322 9.33003 15.313L9.16603 15.3H4.70503C4.10507 15.312 3.5244 15.0879 3.08803 14.676C2.87493 14.4888 2.70462 14.258 2.58867 13.9992C2.47271 13.7404 2.41383 13.4596 2.41603 13.176V3.825C2.41383 3.54139 2.47271 3.26064 2.58867 3.00181C2.70462 2.74299 2.87493 2.51215 3.08803 2.325C3.52396 1.91367 4.10378 1.68964 4.70303 1.701H9.27903C9.3837 1.70703 9.48722 1.67664 9.57203 1.615C9.64869 1.54819 9.69933 1.45647 9.71503 1.356C9.73721 1.25323 9.75158 1.14894 9.75803 1.044C9.76243 0.92663 9.76009 0.809102 9.75103 0.692C9.7417 0.550666 9.73703 0.462001 9.73703 0.426001C9.73696 0.369207 9.72479 0.313078 9.70134 0.261351C9.67789 0.209624 9.6437 0.163486 9.60103 0.126002C9.51434 0.0434502 9.39872 -0.00179114 9.27903 2.13773e-06H4.70503C3.62588 -0.0211883 2.58145 0.381645 1.79603 1.122C1.41242 1.45941 1.10598 1.87547 0.897529 2.34189C0.689082 2.80831 0.583522 3.31414 0.588029 3.825V13.175C0.583954 13.6854 0.689722 14.1906 0.898156 14.6565C1.10659 15.1223 1.41281 15.5379 1.79603 15.875C2.58123 16.6158 3.62572 17.019 4.70503 16.998H9.27903C9.38368 17.0039 9.48715 16.9735 9.57203 16.912C9.64869 16.8452 9.69933 16.7535 9.71503 16.653C9.73719 16.5502 9.75157 16.4459 9.75803 16.341C9.76244 16.2236 9.7601 16.1061 9.75103 15.989C9.7417 15.8483 9.73703 15.7603 9.73703 15.725Z" fill="url(#paint0_linear_111_3)"/>
+			<path d="M21.142 7.905L13.366 0.704998C13.1907 0.543288 12.961 0.453499 12.7225 0.453499C12.484 0.453499 12.2543 0.543288 12.079 0.704998C11.9929 0.77933 11.924 0.871487 11.877 0.975086C11.8301 1.07869 11.8062 1.19126 11.807 1.305V5.111H5.40703C5.16816 5.10762 4.93743 5.19769 4.76402 5.362C4.67792 5.43633 4.60901 5.52848 4.56204 5.63208C4.51508 5.73568 4.49119 5.84825 4.49203 5.962V11.042C4.49119 11.1557 4.51508 11.2683 4.56204 11.3719C4.60901 11.4755 4.67792 11.5677 4.76402 11.642C4.93748 11.8062 5.16818 11.8963 5.40703 11.893H11.807V15.703C11.8062 15.8167 11.8301 15.9293 11.877 16.0329C11.924 16.1365 11.9929 16.2287 12.079 16.303C12.2543 16.4647 12.484 16.5545 12.7225 16.5545C12.961 16.5545 13.1907 16.4647 13.366 16.303L21.142 9.103C21.2274 9.02903 21.2958 8.93757 21.3428 8.83482C21.3897 8.73208 21.414 8.62045 21.414 8.5075C21.414 8.39455 21.3897 8.28292 21.3428 8.18017C21.2958 8.07743 21.2274 7.98597 21.142 7.912V7.905Z" fill="url(#paint1_linear_111_3)"/>
+			<defs>
+				<linearGradient id="paint0_linear_111_3" x1="9.76019" y1="7.08803" x2="-7.27996" y2="15.535" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#5272FF"/>
+					<stop offset="1" stop-color="#00C7D3"/>
+				</linearGradient>
+				<linearGradient id="paint1_linear_111_3" x1="21.414" y1="7.16761" x2="1.14701" y2="26.7368" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#5272FF"/>
+					<stop offset="1" stop-color="#00C7D3"/>
+				</linearGradient>
+			</defs>
+		</svg>
+
+		<a href="#" class="sidebar__logOut-link">Выход</a>
+	</div>
+	
+</aside>
+
+			<header class="header">
+	<div class="row">
+		<div class="col header__icons">
+			<svg class="header__menu" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.5 17C1.10218 17 0.720758 16.842 0.439453 16.5607C0.158149 16.2794 0 15.8978 0 15.5C0 15.1022 0.158149 14.7206 0.439453 14.4393C0.720758 14.158 1.10218 14 1.5 14H8H14.5C14.8978 14 15.2792 14.158 15.5605 14.4393C15.8419 14.7206 16 15.1022 16 15.5C16 15.8978 15.8419 16.2794 15.5605 16.5607C15.2792 16.842 14.8978 17 14.5 17H1.5ZM1.5 10C1.10218 10 0.720758 9.84197 0.439453 9.56067C0.158149 9.27936 0 8.89782 0 8.5C0 8.10218 0.158149 7.72064 0.439453 7.43933C0.720758 7.15803 1.10218 7 1.5 7H18.5C18.8978 7 19.2792 7.15803 19.5605 7.43933C19.8419 7.72064 20 8.10218 20 8.5C20 8.89782 19.8419 9.27936 19.5605 9.56067C19.2792 9.84197 18.8978 10 18.5 10H1.5ZM1.5 3C1.10218 3 0.720758 2.84197 0.439453 2.56067C0.158149 2.27936 0 1.89782 0 1.5C0 1.10218 0.158149 0.720636 0.439453 0.439331C0.720758 0.158026 1.10218 0 1.5 0H16.5C16.8978 0 17.2792 0.158026 17.5605 0.439331C17.8419 0.720636 18 1.10218 18 1.5C18 1.89782 17.8419 2.27936 17.5605 2.56067C17.2792 2.84197 16.8978 3 16.5 3H1.5Z" fill="url(#paint0_linear_1_70)"/>
+				<defs>
+					<linearGradient id="paint0_linear_1_70" x1="5.12" y1="1.921" x2="19.0863" y2="26.5674" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#5272FF"/>
+						<stop offset="1" stop-color="#00C7D3"/>
+					</linearGradient>
+				</defs>
+			</svg>
+			<svg class="header__update" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 17.493C4.24485 16.8724 2.72521 15.7229 1.65064 14.2027C0.576061 12.6826 -0.000561896 10.8666 4.10868e-07 9.00499H2C1.99703 10.4942 2.47004 11.9454 3.3501 13.1468C4.23016 14.3481 5.4713 15.2367 6.89209 15.683C8.31269 16.1296 9.83873 16.1106 11.2478 15.6289C12.6569 15.1472 13.8753 14.2278 14.7251 13.005H12V11.005H18V17.005H16V14.667C15.1563 15.7109 14.0899 16.553 12.8787 17.1314C11.6675 17.7098 10.3422 18.01 9 18.01C7.97788 18.0095 6.96333 17.8346 6 17.493ZM16 9.00499C16.0033 7.51573 15.5305 6.06439 14.6506 4.86284C13.7707 3.66129 12.5297 2.77243 11.1089 2.32598C9.68815 1.87913 8.16197 1.89799 6.75269 2.37975C5.34341 2.8615 4.12479 3.78097 3.2749 5.00401H6V7.00401H4.10868e-07V1.00401H2V3.343C3.16986 1.89552 4.75965 0.846294 6.55054 0.33983C8.34143 -0.166633 10.2453 -0.10543 12 0.515001C13.7553 1.1356 15.275 2.28529 16.3496 3.80565C17.4242 5.32601 18.0008 7.14223 18 9.00401L16 9.00499Z" fill="url(#paint0_linear_1_71)"/>
+				<defs>
+					<linearGradient id="paint0_linear_1_71" x1="6.246" y1="3.42205" x2="20.7115" y2="27.152" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#5272FF"/>
+						<stop offset="1" stop-color="#07BAD7"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+		<div class="col header__profile">
+			<img src="images/dist/profile.png" class="header__image-profile">
+			<span class="header__name-user">Михаил Романенко</span>
+		</div>
+		<div class="col header__notific">
+			<div class="header__notific-num notific">3</div>
+			<img class="header__notific-icon" src="images/dist/notification.png"  alt="Уведомление">
+		</div>
+	</div>
+</header>
+			<section class="content">
+	<section class="status">
+	<div class="row status__row1">
+		<h2 class="col-4 subheader">Статус груза</h2>
+		<div class="col-8 status__filters">
+			<div class="status__descr status__all-statuses">Все статусы</div>
+			<div class="status__filter">
+				<span class="notific notific_filter status__filter-num">3</span>
+				<span class="status__descr status__descr-filter">Фильтр</span>
+				<img class="status__icon" src="images/dist/filter.png" alt="Фильтр">
+			</div>
+		</div>
+	</div>
+	<div class="swiper mySwiper">
+		<ul class="row swiper-wrapper">
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card card_active">
+					<div class="card__icon card__icon1"></div>
+					<div class="card__text card__text-br1">Прибыл на&nbsp;склад&nbsp;в&nbsp;Китае</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon2"></div>
+					<div class="card__text card__text-br1">Выехал со&nbsp;склада&nbsp;в&nbsp;Китае</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon3"></div>
+					<div class="card__text card__text-br1">Таможенное оформление</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon4"></div>
+					<div class="card__text card__text-br1">Прибыл на&nbsp;склад&nbsp;в&nbsp;Москве</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon5"></div>
+					<div class="card__text card__text-br">Сдан на&nbsp;ТК</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon6"></div>
+					<div class="card__text card__text-br">Дата выдачи</div>
+				</article>
+			</li>
+			<li class="col-2 swiper-slide status__swiper-descr">
+				<article class="card">
+					<div class="card__icon card__icon6"></div>
+					<div class="card__text card__text-br">Дата выдачи</div>
+				</article>
+			</li>
+		</ul>
+		<div class="swiper-pagination "></div>
+	</div>
+</section>
+	<section class="delivery-table">
+	<div class="sticky">
+	<section class="search">
+		<ul class="row search__row">
+			<li class="col-6 search__item">
+				<div class="search__panel">
+					<div class="search__select">
+						<button class="search__select-btn">По артикулу</button>
+						<ul class="search__dropdown-list">
+							<li class="search__dropdown-item">По артикулу</li>
+							<li class="search__dropdown-item">По статусу</li>
+						</ul>
+					</div>
+					<form action="#" class="form-search">
+						<div class="form-search__wrapper">
+							<label for="inputSearch" class="form-search__label"></label>
+							<input type="search" id="inputSearch" class="form-search__input" placeholder="Поиск...">
+						</div>
+						<button class="form-search__btn">Найти</button>
+					</form>
+				</div>
+			</li>
+			<li class="col-2">
+				<div class="search__info">
+					<span class="search__text">Вес:</span>
+					<span class="search__num">1254,9</span>
+				</div>
+			</li>
+			<li class="col-2">
+				<div class="search__info">
+					<span class="search__text">Мест:</span>
+					<span class="search__num">230</span>
+				</div>
+			</li>
+			<li class="col-2 search__item">
+				<div class="search__info">
+					<span class="search__text">Объем:</span>
+					<span class="search__num">121,59</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="table-header">
+			<li class="table-header__text">СТАТУС</li>
+			<li class="table-header__text">АРТИКУЛ</li>
+			<li class="table-header__text">ПАРТИЯ/НОМЕР</li>
+			<li class="table-header__text">СПОСОБ</li>
+			<li class="table-header__text">ГОРОД</li>
+		</ul>
+	</section>
+</div>
+	<section class="table">
+	<ul class="table__body">
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__red"></span>
+				<span class="table__status">Выехал со склада в Китае</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-309</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Петропавловск-Камчатский</span> 
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball"></span>
+				<span class="table__status">Таможенное оформление</span>
+				<span class="table__status-block">НА ДОСМОТРЕ</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">КМ-420</div>
+			<div class="table__descr">ЖД</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball"></span>
+				<span class="table__status">Таможенное оформление</span>
+				<span class="table__status-block table__green">ВЫПУСК</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">КМ-420</div>
+			<div class="table__descr">ЖД</div>
+			<div class="table__descr">
+				<span class="table__city">Благовещенск</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__green"></span><span class="table__status">Выдан</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-060</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__green"></span><span class="table__status">Дата выдачи</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-060</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball"></span>
+				<span class="table__status">Таможенное оформление</span>
+				<span class="table__status-block">НА ДОСМОТРЕ</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">КМ-420</div>
+			<div class="table__descr">ЖД</div>
+			<div class="table__descr">
+				<span class="table__city">Благовещенск</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball"></span>
+				<span class="table__status">Таможенное оформление</span>
+				<span class="table__status-block table__green">ВЫПУСК</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">КМ-420</div>
+			<div class="table__descr">ЖД</div>
+			<div class="table__descr">
+				<span class="table__city">Благовещенск</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__green"></span><span class="table__status">Дата выдачи</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-060</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__green"></span><span class="table__status">Дата выдачи</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-060</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+		<li class="table__item">
+			<div class="table__descr">
+				<span class="table__ball table__green"></span><span class="table__status">Выдан</span>
+			</div>
+			<div class="table__descr">855-PP-ALIANS-1706-1-III</div>
+			<div class="table__descr">АМ-060</div>
+			<div class="table__descr">АВИА</div>
+			<div class="table__descr">
+				<span class="table__city">Москва</span>
+				<span class="table__city-icon"></span>
+			</div>
+		</li>
+	</ul>
+</section>
+</section>
+</section>
+
+		</main>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

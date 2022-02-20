@@ -1,40 +1,49 @@
-<section class="search">
-	<ul class="row search__row">
-		<li class="col-6">
-			<div class="search__panel">
-				<div class="search__select">
-					<button class="search__select-btn">По артикулу</button>
-					<ul class="search__dropdown-list">
-						<li class="search__dropdown-item">По статусу</li>
-						<li class="search__dropdown-item">По артикулу</li>
-					</ul>
-				</div>
-				<form action="#" class="form-search">
-					<div class="form-search__wrapper">
-						<label for="inputSearch" class="form-search__label"></label>
-						<input type="search" id="inputSearch" class="form-search__input" placeholder="Поиск...">
+<div class="sticky">
+	<section class="search">
+		<ul class="row search__row">
+			<li class="col-6 search__item">
+				<div class="search__panel">
+					<div class="search__select">
+						<button class="search__select-btn">По артикулу</button>
+						<ul class="search__dropdown-list">
+							<li class="search__dropdown-item">По артикулу</li>
+							<li class="search__dropdown-item">По статусу</li>
+						</ul>
 					</div>
-					<button class="form-search__btn">Найти</button>
-				</form>
-			</div>
-		</li>
-		<li class="col-2">
-			<div class="search__info">
-				<span class="search__text">Вес:</span>
-				<span class="search__num">1254,9</span>
-			</div>
-		</li>
-		<li class="col-2">
-			<div class="search__info">
-				<span class="search__text">Мест:</span>
-				<span class="search__num">230</span>
-			</div>
-		</li>
-		<li class="col-2">
-			<div class="search__info">
-				<span class="search__text">Объем:</span>
-				<span class="search__num">121,59</span>
-			</div>
-		</li>
-	</ul>
-</section>
+					<form action="#" class="form-search">
+						<div class="form-search__wrapper">
+							<label for="inputSearch" class="form-search__label"></label>
+							<input type="search" id="inputSearch" class="form-search__input" placeholder="Поиск...">
+						</div>
+						<button class="form-search__btn">Найти</button>
+					</form>
+				</div>
+			</li>
+			<li class="col-2">
+				<div class="search__info">
+					<span class="search__text">Вес:</span>
+					<span class="search__num">1254,9</span>
+				</div>
+			</li>
+			<li class="col-2">
+				<div class="search__info">
+					<span class="search__text">Мест:</span>
+					<span class="search__num">230</span>
+				</div>
+			</li>
+			<li class="col-2 search__item">
+				<div class="search__info">
+					<span class="search__text">Объем:</span>
+					<span class="search__num">121,59</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="table-header">
+			<li class="table-header__text">СТАТУС</li>
+			<li class="table-header__text">АРТИКУЛ</li>
+			<li class="table-header__text">ПАРТИЯ/НОМЕР</li>
+			<li class="table-header__text">СПОСОБ</li>
+			<li class="table-header__text">ГОРОД</li>
+		</ul>
+	</section>
+</div>

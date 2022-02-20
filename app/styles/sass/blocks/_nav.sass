@@ -36,7 +36,22 @@
 	&__link
 		color: $whitecolor
 		transition: color .3s ease-in-out
-
+	&__link-notific
+		position: relative
+		&:after
+			position: absolute
+			content: '3'
+			top: -2px
+			right: -30px
+			width: 18px
+			height: 18px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			font-size: 12px
+			color: $whitecolor
+			background: linear-gradient(317.91deg, #00C7D3 -15.54%, #5272FF 81.21%)
 	&__item:hover 
 		.nav__link
 			color: $activecolor
@@ -46,6 +61,21 @@
 	&__list_active
 		margin-top: 140px
 		margin-left: 12px
+	&__item
+		position: relative
 		
+	&__tooltip
+		display: none
+		position: absolute
+		top: -10px
+		right: -130px
+		text-align: center
+		width: 130px
+		padding: 14px 20px
+		border-radius: 16px
+		color: $activecolor
+		background-color: #182773
+		filter: drop-shadow(0px 6px 10px rgba(12, 23, 80, 0.302))
 
-
+	&__tooltip-active
+		display: block
